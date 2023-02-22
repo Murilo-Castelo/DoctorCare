@@ -1,8 +1,28 @@
+<<<<<<< HEAD
+=======
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variaveis ( para organizar as cores do site )*/
+:root{
+    --bg-color: #DCE9E2;
+    --letter-color: #00856F;
+    --color-h1: #212529;
+    --color-p: #495057;
+    --color-section1: #F7F9F9
+}
+
+>>>>>>> 8d6fef99505a468243e215bcd80fdc867d171b68
 header{
     background-color: #DCE9E2;
     height: 100vh;
 }
 
+<<<<<<< HEAD
 .cabecalho{
     display: flex;
     justify-content: center;
@@ -82,3 +102,259 @@ button svg{
 }
 
 
+=======
+.container{
+    padding-left: 123px;
+    padding-right: 123px;
+}
+
+.menu, nav, nav ul{
+    display: flex;
+}
+
+.menu{
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding-left: 32px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--letter-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+.button a{
+    color: var(--letter-color);
+    text-decoration: none;
+    border: 1px solid var(--letter-color);
+    border-radius: 40px;
+    padding: 10px 24px; 
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  
+  .coluna-1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 10px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .coluna-2 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .coluna-3 {
+    width: 1065px;
+    grid-row: 2 / 3;
+    grid-column: 1 / span 2;
+    background-color: #FFFAF1;
+    height: 210px;
+    position: absolute;
+    bottom: -150px;
+    z-index: 1;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    text-align: center;
+  }
+  
+.coluna-1 h6{
+    color: var(--letter-color);
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+}
+
+.coluna-1 h1{
+    color: var(--color-h1);
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 130%;
+    margin-bottom: 16px;
+}
+
+.coluna-1 p{
+    color: var(--color-p);
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+
+.coluna-1 button{
+    width: 263px;
+    color: #fff;
+    background-color: var(--letter-color);
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    margin-bottom: 16px;
+}
+
+.coluna-1 button svg{
+    margin-right: 16px;
+}
+
+.coluna-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coluna-3 h1{
+    color: var(--color-h1);
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+}
+
+.coluna-3 h6{
+    color: var(--letter-color);
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.c2, .c3{
+    border-left: 1px solid #00856F;
+}
+
+section{
+    padding-top: 200px;
+    background-color: var(--color-section1)
+}
+
+.inicio{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.inicio h6{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    color: #00856F;
+    margin-bottom: 16px;
+    }
+
+.inicio h1{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+text-align: center;
+color: #212529;
+margin-bottom: 64px;
+}
+
+.group2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* duas linhas de altura igual */
+    grid-gap: 40px;
+    padding-bottom: 160px;
+}
+
+.conter{
+    padding: 24px;
+}
+
+.item{
+    background-color: #fff;
+}
+
+.item svg{
+    background-color: #DCE9E2;
+    border-radius: 50%;
+    padding: 2px;
+    margin-bottom: 16px;
+}
+
+.item h1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    color: #212529;
+    margin-bottom: 16px;
+}
+
+.item p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.item1{
+    grid-row: 1; /* começa na primeira linha */
+    grid-column: 1; /* começa na primeira coluna */
+  }
+  
+  .item2 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  
+  .item3 {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  
+  .item4 {
+    grid-row: 2; /* começa na segunda linha */
+    grid-column: 1; /* começa na primeira coluna */
+  }
+  
+  .item5 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  
+  .item6 {
+    grid-row: 2;
+    grid-column: 3;
+  }
+>>>>>>> 8d6fef99505a468243e215bcd80fdc867d171b68
